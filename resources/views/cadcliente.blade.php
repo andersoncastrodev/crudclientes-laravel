@@ -3,7 +3,7 @@
 @section('conteudo')
 
 <div class="container">
-    <form action="">
+    <form name="formCad" id="formCad" method="POST" action="{{ url("cadcliente/store") }}">
      @csrf
      <p></p>
 
@@ -17,7 +17,7 @@
       <input class="form-control" type="text" name="telefone" id="telefone" require> <br>
 
     </form>
-    
+
 </div>
 
 @endsection
