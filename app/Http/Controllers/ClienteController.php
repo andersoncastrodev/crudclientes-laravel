@@ -66,7 +66,9 @@ class ClienteController extends Controller
      */
     public function edit($id)
     {
-        //
+        $cliente = Cliente::find($id);
+     //   dd ($cliente);
+        return view('edtcliente',['cliente' => $cliente ]);
     }
 
     /**
@@ -78,7 +80,12 @@ class ClienteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Cliente::where(['id'=>$id])->update([
+            'nome'=>$request->nome,
+            'endereco'=>$request->endereco,
+            'telefone'=>$request->telefone
+        ]);
+        return redirect('/');
     }
 
     /**

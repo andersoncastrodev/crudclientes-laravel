@@ -4,16 +4,15 @@
 
 <div class="container">
    
-<form name="formCard" id="formCard" method="POST" action="{{ url("edtcliente/{$cliente->id/update}") }} ">
-  @csrf 
+<form name="formCard" id="formCard" method="POST" action="{{ url("edtcliente/{$cliente->id}/update") }} ">
+  @csrf  
   <p></p>
   <label>Codigo:</label>
   <input class="form-control" type="text" name="id" id="id" value="{{ $cliente->id }}" require>
 
   <label>Nome:</label>
   <input class="form-control" type="text" name="nome" id="nome" value="{{ $cliente->nome }}" require>
-  </form>
-
+ 
   <label>Endereço:</label>
   <input class="form-control" type="text" name="endereco" id="endereco" value="{{ $cliente->endereco }}" require>
 
