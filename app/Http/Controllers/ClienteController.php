@@ -53,9 +53,17 @@ class ClienteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $busca = request('busca');
+        if($busca){
+            $cliente = Cliente::where([
+                ['nome','like','%'.$busca.'%']
+            ])->get();
+        }else{
+            $cliente = Cliente::all()->sortBy('nome');
+        }
+        return view('concliente',['cliente' => $cliente ]);
     }
 
     /**

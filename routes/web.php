@@ -14,3 +14,5 @@ Route::get('cliente/{id}',[ClienteController::class, 'edit']);
 Route::post('clienteedt/{id}',[ClienteController::class, 'update']);
 
 Route::get('clientedes/{id}',[ClienteController::class, 'destroy']);
+
+Route::get('clientebus',[ClienteController::class, 'show']);

@@ -35,7 +35,7 @@
             </li>
         </ul>
 
-        <form class="d-flex" action="/show" method="GET">
+        <form class="d-flex" action="/clientebus" method="GET">
             <input class="form-control me-2" type="search" id="busca" name="busca" placeholder="Buscar" aria-label="Buscar">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
