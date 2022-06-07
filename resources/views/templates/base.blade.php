@@ -40,8 +40,11 @@
             <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
         
-        </div>
-    </div>
+         </div>
+      </div>
     </nav> 
+
+    @yield('conteudo')
+
 </body>
 </html>

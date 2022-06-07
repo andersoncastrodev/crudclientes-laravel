@@ -3,7 +3,8 @@
 @section('conteudo')
 
 <div class="container">
-    <form name="formCad" id="formCad" method="POST" action="{{ url("cadcliente/store") }}">
+    
+   <form name="formCad" id="formCad" method="POST" action="{{ url("cadcliente/store") }}">
      @csrf
      <p></p>
 
@@ -16,6 +17,8 @@
       <label>Telefone:</label>
       <input class="form-control" type="text" name="telefone" id="telefone" require> <br>
 
+      <input class="btn btn-primary" type="submit" value="Cadastrar" required>
+      
     </form>
 
 </div>
