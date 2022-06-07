@@ -96,6 +96,7 @@ class ClienteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Cliente::destroy($id);
+        return redirect('/');
     }
 }

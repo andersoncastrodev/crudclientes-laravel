@@ -22,7 +22,7 @@
               <td>{{ $cli->endereco }}</td>
               <td>{{ $cli->telefone }}</td>
               <td> <a href=" {{ url("cliente/$cli->id") }} "> <button class="btn btn-primary"> Editar</button>  </a>  </td>
-              <td> <a href=" {{ url("destroy/$cli->id") }} "> <button class="btn btn-danger"> Deletar</button> </a></td>
+              <td> <a href=" {{ url("clientedes/$cli->id") }} "> <button class="btn btn-danger"> Deletar</button> </a></td>
           </tr>
         @endforeach
       </tbody>
