@@ -4,8 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// Importanto a Classe Cliente 
+use App\Models\Cliente;
+
 class ClienteController extends Controller
 {
+ 
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +17,9 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        //
+        $cliente = Cliente::all()->sortBy('nome');
+        //dd($cliente);
+        return view('concliente',['cliente'=>$cliente]);
     }
 
     /**
@@ -23,7 +29,7 @@ class ClienteController extends Controller
      */
     public function create()
     {
-        //
+        return view('cadcliente');
     }
 
     /**

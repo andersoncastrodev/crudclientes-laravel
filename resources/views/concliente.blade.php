@@ -5,7 +5,7 @@
  <div class="container">
    <p></p>
    <table class="table">
-      <thead>
+      <thead class="thead-dark">
           <tr>
             <th scope="col">Codigo</th>
             <th scope="col">Nome</th>
@@ -29,4 +29,4 @@
 
    </table>  
  </div>
-@endsection
+@endsection 
