@@ -25,7 +25,7 @@
             <a class="nav-link active" aria-current="page" href="/">Cliente</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/cadcliente/create">Novo</a>
+            <a class="nav-link active" aria-current="page" href="/cliente">Novo</a>
             </li>
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Voltar</a>

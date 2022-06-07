@@ -4,7 +4,7 @@
 
 <div class="container">
     
-   <form name="formCad" id="formCad" method="POST" action="{{ url("cadcliente/store") }}">
+   <form name="formCad" id="formCad" method="POST" action="{{ url("clientecad") }}">
      @csrf
      <p></p>
 

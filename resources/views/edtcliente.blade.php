@@ -4,7 +4,7 @@
 
 <div class="container">
    
-<form name="formCard" id="formCard" method="POST" action="{{ url("edtcliente/{$cliente->id}/update") }} ">
+<form name="formCard" id="formCard" method="POST" action="{{ url("clienteedt/{$cliente->id}") }} ">
   @csrf  
   <p></p>
   <label>Codigo:</label>

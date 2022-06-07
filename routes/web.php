@@ -5,10 +5,10 @@ use App\Http\Controllers\ClienteController;
 
 Route::get('/', [ClienteController::class, 'index']);
 
-Route::get('cadcliente/create', [ClienteController::class, 'create']);
+Route::get('cliente', [ClienteController::class, 'create']);
 
-Route::post('cadcliente/store', [ClienteController::class, 'store']);
+Route::post('clientecad', [ClienteController::class, 'store']);
 
-Route::get('edtcliente/{id}/edit',[ClienteController::class, 'edit']);
+Route::get('cliente/{id}',[ClienteController::class, 'edit']);
 
-Route::post('edtcliente/{id}/update',[ClienteController::class, 'update']);
+Route::post('clienteedt/{id}',[ClienteController::class, 'update']);
